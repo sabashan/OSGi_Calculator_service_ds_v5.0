@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LinkSmartServiceExample
+Bundle-SymbolicName: CalculatorServiceAPI
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Service-Component: OSGI-INF/component.xml
+Export-Package: org.wso2.example.calculator;uses:="org.eclipse.osgi.framework.console"
+Import-Package: org.eclipse.osgi.framework.console,
+ org.eclipse.osgi.framework.util

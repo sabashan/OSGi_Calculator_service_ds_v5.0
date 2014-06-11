@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="LinkSmartServiceConsumerExample">
+   <implementation class="org.wso2.example.consumer.CalculatorConsumer"/>
+   <reference bind="onBind" cardinality="1..1" interface="org.wso2.example.calculator.Calculator" name="Calculator" policy="static" unbind="onUnbind"/>
+   <service>
+      <provide interface="org.eclipse.osgi.framework.console.CommandProvider"/>
+   </service>
+</scr:component>
